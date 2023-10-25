@@ -417,7 +417,12 @@
 
       
 
+   @media screen and (max-width: 900px) {
+        .box{
+          display: none;
+        }
 
+      }
 
       @media screen and (max-width: 700px) {
         .aside{
