@@ -127,46 +127,20 @@
 
 
 
-    .learn_section{
+     .learn_section{
         background-color: #84d2bf;
+        padding:20px;
     }
-    
-    .aside{
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 5px;
-     }
-    .aside img{
-        max-width: 80%;
-        max-height: 80%;
-    }
+
      .aside p{
         background-color: #fff;
         color: black;
         font-size: 30px;
         font-weight: bolder;
-         margin: 20px;
         border-radius: 50px;
-        padding: 20px;
+        padding: 40px;
         font-family: 'Playpen Sans', cursive;
      }
-
-
-
-    .team{
-        background-color: white;
-      text-align: center;
-      padding:20px;
-       width: 100%;
-        color: black;
-    }
-
-    .team h2{
-        font-size: 20px;
-    }
-
-
     .chef{
         background-size: cover;
         background-position: center;
