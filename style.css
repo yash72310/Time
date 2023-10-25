@@ -421,11 +421,6 @@
         .box{
           display: none;
         }
-       .aside{
-        display: grid;
-        grid-template-columns: 1fr;
-     }
-       
        .aside p{
           background-color: black;
           color: #fff;
