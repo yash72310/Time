@@ -417,17 +417,18 @@
 
       
 
-   @media screen and (max-width: 1000px) {
+   @media screen and (max-width: 900px) {
         .box{
           display: none;
         }
        .aside p{
-          background-color: #fff;
-          color: black;
+          background-color: black;
+          color: #fff;
           font-size: 15px;
-          font-weight: bolder;
+          font-weight: lighter;
            margin: 20px;
           border-radius: 50px;
+           width:100%;
           padding: 20px;
           font-family: 'Playpen Sans', cursive;
        }
