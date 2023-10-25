@@ -428,7 +428,7 @@
           font-weight: lighter;
            margin: 20px;
           border-radius: 50px;
-           width:100vw;
+           width:100%;
           padding: 20px;
           font-family: 'Playpen Sans', cursive;
        }
