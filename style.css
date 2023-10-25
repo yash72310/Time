@@ -451,6 +451,9 @@
             right:100px;
             cursor: pointer;
         }
+          .box{
+              display:none;
+          }
       }
 
       @media screen and (max-width: 400px){
@@ -475,5 +478,8 @@
          }
          .side img{
            display: none;
+          }
+          .box{
+              display:none;
           }
       }
