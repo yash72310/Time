@@ -431,6 +431,9 @@
           padding: 20px;
           font-family: 'Playpen Sans', cursive;
        }
+       .aside img{
+        display:none;
+    }
 
       }
 
