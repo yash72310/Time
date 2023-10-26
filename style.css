@@ -10,12 +10,12 @@
     font-family: 'Roboto', sans-serif;
     }
     html{
-    font-size:67.5%;
+      font-size: 67.5%;
     }
     body{
     background-color:#1f1000;
     color:#fff;
-    max-width: 100%;
+    min-width: 100vw;
     user-select: none;
     }
     .topbar{
@@ -29,14 +29,6 @@
         height:10%;
         width:10%;
     }
-    navbar .burger{
-        height:10%;
-        position: absolute;
-        right:100px;
-        cursor: pointer;
-        color:#fff;
-        font-weight: lighter;
-    }
     navbar h2{
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
@@ -45,6 +37,25 @@
     }
     navbar h2 span{
         color: orangered;
+    }
+    .buttons{
+      gap:20px;
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+      display: flex;
+
+      
+    }
+    .login,.signup{
+      background-color: #000;
+      color:#fff;
+      padding:5px 20px 5px 20px;
+      height: 50px;
+      gap:20px;
+      cursor: pointer;
+      border: none;
+     
     }
     .quotes{
         display: flex;
@@ -127,7 +138,7 @@
 
 
 
-     .learn_section{
+    .learn_section{
         background-color: #84d2bf;
         padding:20px;
     }
@@ -141,7 +152,10 @@
         padding: 40px;
         font-family: 'Playpen Sans', cursive;
      }
-     .team{
+
+
+
+    .team{
         background-color: white;
       text-align: center;
       padding:20px;
@@ -248,7 +262,6 @@
         border: none;
         cursor: pointer;
     }
-
 
     #loadMore{
         width: 200px;
@@ -405,36 +418,37 @@
 
       
 
-   @media screen and (max-width: 900px) {
+      @media screen and (max-width: 900px) {
         .box{
           display: none;
         }
        .aside p{
-          background-color: black;
-          color: #fff;
+          background-color: #fff;
+          color: black;
           font-size: 15px;
           font-weight: lighter;
            margin: 20px;
+           width:100%;
           border-radius: 50px;
           padding: 20px;
           font-family: 'Playpen Sans', cursive;
        }
-       .aside img{
-        display:none;
-    }
+       .buttons{
+        gap:5px;
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        display: flex;
+  
+        
+      }
+  
 
       }
 
       @media screen and (max-width: 700px) {
-        .aside{
-            display: grid;
-            align-items: center;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 5px;
-         }
-        .aside img{
-            max-width: 100%;
-            max-height: 40%;
+        html{
+          font-size: 52.5%;
         }
          .aside p{
             background-color: #fff;
@@ -456,9 +470,18 @@
             right:100px;
             cursor: pointer;
         }
-          .box{
-              display:none;
-          }
+        .box{
+          display: none;
+      }
+      .buttons{
+        gap:5px;
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        display: flex;
+  
+        
+      }
       }
 
       @media screen and (max-width: 400px){
@@ -485,6 +508,15 @@
            display: none;
           }
           .box{
-              display:none;
-          }
+            display: none;
+        }
+        .buttons{
+          gap:5px;
+          position: absolute;
+          right: 0;
+          margin-right: 10px;
+          display: flex;
+    
+          
+        }
       }
