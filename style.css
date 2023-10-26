@@ -434,11 +434,7 @@
           font-family: 'Playpen Sans', cursive;
        }
        .buttons{
-        gap:5px;
-        position: absolute;
-        right: 0;
-        margin-right: 10px;
-        display: flex;
+        display:none;
   
         
       }
@@ -474,11 +470,7 @@
           display: none;
       }
       .buttons{
-        gap:5px;
-        position: absolute;
-        right: 0;
-        margin-right: 10px;
-        display: flex;
+       display:none;
   
         
       }
@@ -511,12 +503,6 @@
             display: none;
         }
         .buttons{
-          gap:5px;
-          position: absolute;
-          right: 0;
-          margin-right: 10px;
-          display: flex;
-    
-          
+          display:none;
         }
       }
