@@ -1,508 +1,301 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;1,400;1,600;1,700&display=swap');
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Roboto', sans-serif;
-    }
-    html{
-      font-size: 67.5%;
-    }
-    body{
-    background-color:#1f1000;
-    color:#fff;
-    min-width: 100vw;
-    user-select: none;
-    }
-    .topbar{
-    background-color: rgb(50,50,60);
-    }
-    navbar{
-    display:flex;
-    padding:30px;
-    }
-    navbar .logo{
-        height:10%;
-        width:10%;
-    }
-    navbar h2{
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-        padding-left: 20px;
-        
-    }
-    navbar h2 span{
-        color: orangered;
-    }
-    .buttons{
-      gap:20px;
-      position: absolute;
-      right: 0;
-      margin-right: 20px;
-      display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-      
-    }
-    .login,.signup{
-      background-color: #000;
-      color:#fff;
-      padding:5px 20px 5px 20px;
-      height: 50px;
-      gap:20px;
-      cursor: pointer;
-      border: none;
-     
-    }
-    .quotes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .quotes h2{
-        font-size: 20px;
-    padding-left: 20px;
-    float: left;
-    text-transform: capitalize;
+a{
+    text-decoration: none;
+}
+
+
+.learn_section,.quotes,.about_quotes{
+    font-family: 'Playpen Sans', cursive;
+}
+.service{
     font-family: 'Sometype Mono', monospace;
+}
+.team{
+    background-color: white;
+  text-align: center;
+  padding:20px;
+   width: 100%;
+    color: black;
+}
 
-    }
-    .quotes img{
-        max-width: 50%;
-        float: left;
-    }
-    .learn button{
-    padding:15px 20px 15px 20px;
-    border-radius:50px;
-    color:white;
-    background-color:#00001a;
-    cursor:pointer;
-    border:none;
-    margin-top: 30px;
-    font-family: 'Sometype Mono', monospace;
-    }
-    .learn{
-    padding:0px 20px 30px;
-    }
-    img{
-        -webkit-user-drag: none;
-    }
+.team h2{
+    font-size: 20px;
+}
 
 
-
-
-
+.chef{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     
-    
-    .home-section{
-    background-color:white;
-    color:black;
-    }
-    .home-section h2{
-    padding:50px;
-    font-size:30px;
+}
+.chef .heading span{
+    color: #000;
+}
+.chef .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+}
+
+.chef .box-container .box{
+    height: 27rem;
+    width: 20rem;
+    margin: 2rem;
+    border: .5rem solid var(--red);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.box{
+    display: none;
+}
+
+.chef .box-container .box img{
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.chef .box-container .box p{
+    padding:5px;
+    font-size: 15px;
+}
+
+.chef .box-container .box .info{
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: .5rem solid var(--red);
     text-align: center;
-    font-family: 'Sometype Mono', monospace;
+
+}
+
+.chef .box-container .box:hover .info{
+    bottom: 0rem;
+
+}
+
+
+.chef .box-container .box .info h3{
+    font-size: 2rem;
+    color: #333;
+    padding: .5rem 0;
+}
+
+.chef .box-container .box .info span{
+    font-size: 1rem;
+    color: #666;
+}
+
+.chef .box-container .box .info .share{
+    margin-top: 1rem;
+    border-top: .1rem solid rgba(0,0,0,0.3);
+    padding: 1rem 0;
+}
+
+.chef .box-container .box .info .share a{
+    font-size: 2rem;
+    margin: 1rem;
+    color: var(--red);
+}
+
+.chef .box-container .box .info .share a:hover{
+    color: #333;
+}
+
+.team button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#loadMore{
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: black;
+    transition: .3s;
+}
+#loadMore:hover {
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    text-decoration: none;
+  }
+
+
+
+  
+  .contact{
+    background-color: black;
+    display:flex ;
+}
+.contact .side{
+    padding: 20px;
+}
+.contact .side h2{
+    padding: 50px;
+    float: right;
+    font-size: 30px;
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .send{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ .send:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  .container h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .side img{
+    width: 100%;
+    height: auto;
+  }
+  .contact_form label{
+    color:#fff;
+  }
+
+
+  .footer {
+    background-color: #D7C2BB;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  .footer .heading {
+    color: #000;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
     }
-    .home-section img{
-        width:100%;
-        height:auto;
+  
+    .footer {
+      position: unset;
     }
-
-
-
-
-    .services{
-        background-color: #535379;
-        padding: 10px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
     }
-    .services h2{
-        color:#00cc99;
-        font-size: 30px;
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
     }
-    .services .description p{
-        padding: 20px;
-        font-size: 15px;
-
-    }
-    .service-list{
-        padding-left: 50px;;
-    }
-    .service-list li{
-        font-size: 15px;
-        line-height: 30px;
-    }
+  }
 
 
 
-    .learn_section{
-        background-color: #84d2bf;
-        padding:20px;
-    }
-
-     .aside p{
-        background-color: #fff;
-        color: black;
-        font-size: 30px;
-        font-weight: bolder;
-        border-radius: 50px;
-        padding: 40px;
-        font-family: 'Playpen Sans', cursive;
-     }
 
 
-
-    .team{
-        background-color: white;
-      text-align: center;
-      padding:20px;
-       width: 100%;
-        color: black;
-    }
-
-    .team h2{
-        font-size: 20px;
-    }
-
-
-    .chef{
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        
-    }
-    .chef .heading span{
-        color: #000;
-    }
-    .chef .box-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-
-    }
-    
-    .chef .box-container .box{
-        height: 30rem;
-        width: 25rem;
-        margin: 2rem;
-        border: .5rem solid var(--red);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
-        position: relative;
-        overflow: hidden;
-        border-radius: 30px;
-    }
+ 
+  @media screen and (max-width: 900px) {
     .box{
+      display: none;
+    }
+}
+
+  @media screen and (max-width: 700px){
+    .side img{
         display: none;
     }
-    
-    .chef .box-container .box img{
-        height: 30%;
-        width: 30%;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-top: 10px;
+  }
+
+  @media screen and (max-width: 400px){
+    .side img{
+        display: none;
     }
-    .chef .box-container .box p{
-        padding:5px;
-        font-size: 15px;
-    }
-    
-    .chef .box-container .box .info{
-        position: absolute;
-        bottom: -6rem;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        border-top: .5rem solid var(--red);
-        text-align: center;
-    
-    }
-    
-    .chef .box-container .box:hover .info{
-        bottom: 0rem;
-    
-    }
-    
-    
-    .chef .box-container .box .info h3{
-        font-size: 2rem;
-        color: #333;
-        padding: .5rem 0;
-    }
-    
-    .chef .box-container .box .info span{
-        font-size: 1.5rem;
-        color: #666;
-    }
-    
-    .chef .box-container .box .info .share{
-        margin-top: 1rem;
-        border-top: .1rem solid rgba(0,0,0,0.3);
-        padding: 1rem 0;
-    }
-    
-    .chef .box-container .box .info .share a{
-        font-size: 2rem;
-        margin: 1rem;
-        color: var(--red);
-    }
-    
-    .chef .box-container .box .info .share a:hover{
-        color: #333;
-    }
-
-    .team button{
-        padding: 10px 20px 10px 20px;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-    }
-
-    #loadMore{
-        width: 200px;
-        color: #fff;
-        display: block;
-        text-align: center;
-        margin: 20px auto;
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid transparent;
-        background-color: black;
-        transition: .3s;
-    }
-    #loadMore:hover {
-        color: black;
-        background-color: #fff;
-        border: 1px solid black;
-        text-decoration: none;
-      }
-
-
-
-    .contact{
-        background-color: black;
-        display:flex ;
-    }
-    .contact .side{
-        padding: 20px;
-    }
-    .contact .side h2{
-        padding: 50px;
-        float: right;
-        font-size: 30px;
-    }
-
-    input[type=text],input[type=email], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
-      .send{
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-     .send:hover {
-        background-color: #45a049;
-      }
-      
-      .container {
-        border-radius: 5px;
-        padding: 30px;
-      }
-
-      .container h2{
-        margin-bottom: 20px;
-        font-size: 30px;
-      }
-      .side img{
-        width: 100%;
-        height: auto;
-      }
-
-
-
-
-
-      .footer {
-        background-color: #D7C2BB;
-        color: #000;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-      }
-      
-      .footer .heading {
-        color: #000;
-        max-width: 1010px;
-        width: 90%;
-        text-transform: uppercase;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-      }
-      
-      .footer .content {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 1.5rem;
-      }
-      
-      .footer .content p {
-        margin-bottom: 1.3rem;
-      }
-      
-      .footer .content a {
-        text-decoration: none;
-        color: #000;
-      }
-      
-      .footer .content a:hover {
-        border-bottom: 1px solid #971717;
-      }
-      
-      .footer .content h4 {
-        margin-bottom: 1.3rem;
-        font-size: 19px;
-      }
-      
-      footer {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      
-      footer hr {
-        margin: 2rem 0;
-      }
-      
-      @media (max-width: 767px) {
-        .footer .content {
-          display: flex;
-          flex-direction: column;
-          font-size: 14px;
-        }
-      
-        .footer {
-          position: unset;
-        }
-      }
-      
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .footer .content,
-        .footer {
-          font-size: 14px;
-        }
-      }
-      
-      @media (orientation: landscape) and (max-height: 500px) {
-        .footer {
-          position: unset;
-        }
-      }
-
-
-
-      
-
-      @media screen and (max-width: 900px) {
-        .box{
-          display: none;
-        }
-       .aside p{
-          background-color: #fff;
-          color: black;
-          font-size: 15px;
-          font-weight: lighter;
-           margin: 20px;
-           width:100%;
-          border-radius: 50px;
-          padding: 20px;
-          font-family: 'Playpen Sans', cursive;
-       }
-       .buttons{
-        display:none;
-  
-        
-      }
-  
-
-      }
-
-      @media screen and (max-width: 700px) {
-        html{
-          font-size: 52.5%;
-        }
-         .aside p{
-            background-color: #fff;
-            color: black;
-            font-size: 20px;
-            font-weight: bolder;
-             margin: 10px;
-            border-radius: 50px;
-            padding: 20px;
-            width: 100%;;
-         }
-         .side img{
-           display: none;
-          }
-          navbar .burger{
-            height:5%;
-            width:10%;
-            position: absolute;
-            right:100px;
-            cursor: pointer;
-        }
-        .box{
-          display: none;
-      }
-      .buttons{
-       display:none;
-  
-        
-      }
-      }
-
-      @media screen and (max-width: 400px){
-        .aside{
-            display: grid;
-            align-items: center;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 5px;
-         }
-        .aside img{
-           display: none;
-        }
-         .aside p{
-            background-color: #fff;
-            color: black;
-            font-size: 20px;
-            font-weight: bolder;
-             margin: 10px;
-            border-radius: 50px;
-            padding: 20px;
-            width: 150%;;
-         }
-         .side img{
-           display: none;
-          }
-          .box{
-            display: none;
-        }
-        .buttons{
-          display:none;
-        }
-      }
+  }
