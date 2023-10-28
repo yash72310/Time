@@ -68,7 +68,7 @@ a{
     height: 30%;
     width: 30%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     margin-top: 10px;
 }
 .chef .box-container .box p{
