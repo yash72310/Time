@@ -148,59 +148,82 @@ a{
 
 
 
-  
-  .contact{
-    background-color: black;
-    display:flex ;
-}
-.contact .side{
-    padding: 20px;
-}
-.contact .side h2{
-    padding: 50px;
-    float: right;
-    font-size: 30px;
-}
-
-input[type=text],input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  .contact_heading,.contact_para{
+    text-align: center;
   }
-  .send{
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  label{
+    display:block;
+    margin:1em 0 .2em;
   }
-  
- .send:hover {
-    background-color: #45a049;
+  /* single-line text, checkbox, and button */
+  input, select, textarea{
+    display:block;
+    width:100%;
+    padding:.3em;
+    font-size:20px;
+    background-color:#fbfbfb;
+    border:solid 1px #CCC;
+    resize:vertical;
+  }
+  textarea{
+    min-height:180px;
+  }
+  select{
+    color:indigo;
+  }
+  option{
+    color:blue;
+    background: lavenderBlush;
+  }
+  input[type=checkbox]{
+    display:inline;
+    width:auto;
+    color:red;
   }
   
-  .container {
-    border-radius: 5px;
-    padding: 30px;
+  input[type=submit]{
+    background:lightcoral;
+    margin:1em 0 0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    transition:all .3s ease-out;
   }
-
-  .container h2{
-    margin-bottom: 20px;
-    font-size: 30px;
+  
+  input:focus,
+  input:hover,
+  select:focus,
+  select:hover,
+  textarea:focus,
+  textarea:hover{
+    background: lavenderBlush;
   }
-  .side img{
-    width: 100%;
-    height: auto;
+  
+  /* hover and focus states */
+  input[type=submit]:hover,
+  input[type=submit]:focus{
+    background: lightgreen;
+    outline:none;
   }
-  .contact_form label{
-    color:#fff;
+  
+  @media screen and (min-width:600px) {
+    /*  make the form 2 columns */
+    .contact:after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+    .column{
+      width:50%;
+      padding:1em;
+      float:left;
+    }
   }
+  
+  
+  
+  
+  
 
 
   .footer {
@@ -408,7 +431,7 @@ input[type=text],input[type=email], select, textarea {
     .side img{
         display: none;
     }
-    .button {
+    /* .button {
       display: inline-block;
       background: #4285f4;
       color: #fff;
@@ -419,7 +442,7 @@ input[type=text],input[type=email], select, textarea {
       cursor: pointer;
       -webkit-transition: all ease-in-out 300ms;
       transition: all ease-in-out 300ms;
-    }
+    } */
     .button:hover {
       box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
       -webkit-transform: translate(0px, -10px) scale(1.2);
@@ -461,3 +484,8 @@ input[type=text],input[type=email], select, textarea {
   
   
   }
+
+
+
+
+  
