@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+.home{
+  background-color:#ffb366;
+}
+
 
 .learn_section,.quotes,.about_quotes{
     font-family: 'Playpen Sans', cursive;
