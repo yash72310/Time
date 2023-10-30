@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -21,8 +22,16 @@ a{
 .learn_section,.quotes,.about_quotes{
     font-family: 'Playpen Sans', cursive;
 }
+#services{
+  background-color: lightcoral;
+}
 .service{
-     font-family: 'Playpen Sans', cursive !important;
+  font-family: 'Playpen Sans', cursive;
+}
+.service_content{
+  font-family: Open Sans,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
 }
 .team{
     background-color: white;
@@ -326,7 +335,7 @@ a{
     box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate(0px, -10px) scale(1.2);
             transform: translate(0px, -10px) scale(1.2);
-      background: lightcoral;
+            background: lightcoral;
   }
 
   
