@@ -22,7 +22,7 @@ a{
     font-family: 'Playpen Sans', cursive;
 }
 .service{
-     font-family: 'Playpen Sans', cursive;
+     font-family: 'Playpen Sans', cursive !important;
 }
 .team{
     background-color: white;
