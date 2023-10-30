@@ -11,12 +11,13 @@
 a{
     text-decoration: none;
 }
+.quotes{
+  font-size: 25px;;
+}
 
 .home{
   background-color:#ffb366;
 }
-
-
 .learn_section,.quotes,.about_quotes{
     font-family: 'Playpen Sans', cursive;
 }
@@ -493,3 +494,63 @@ a{
 
 
   
+  .swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+
+
+.fade-in-out {
+  opacity: 0;
+  animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards infinite;
+  text-align: center;
+  font-size: 30px;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
