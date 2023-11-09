@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    max-width:90vw;
+    min-width:90vw;
 }
 a{
     text-decoration: none;
