@@ -32,3 +32,14 @@ function sendMail(){
     });
     
   })
+
+
+
+  let text=document.querySelector('.about_quotes')
+  text.innerHTML=text.innerText
+  .split(" ")
+  .map((letters,i)=>`<span style="transition-delay:${i*40}ms;
+  filter:hue-rotate(${i*10} deg)">
+  ${letters}
+  </span>`
+  ).join("");
