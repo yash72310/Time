@@ -9,21 +9,66 @@
     box-sizing: border-box;
 }
 body{
-    min-width:90vw;
+    min-width: 90vw;
 }
+
 a{
     text-decoration: none;
 }
 .quotes{
   font-size: 25px;
+  color: black;
+  text-shadow: 0 0 2px currentColor;
+}
+
+
+.what_img{
+    filter: drop-shadow(0 0 5px #30312a);
+    animation: glow 1s alternate infinite;
+}
+@keyframes glow {
+    0%{
+        filter: drop-shadow(0 0 5px #30312a);
+    }
+    100%{
+        filter: drop-shadow(0 0 25px #30312a);
+    }
 }
 
 .home{
   background-color:#cec8b2;
 }
-.learn_section,.quotes,.about_quotes{
+.learn_section{
+    background-color: #eeeaf2 !important;
+}
+.learn_section,.quotes{
     font-family: 'Playpen Sans', cursive;
 }
+
+.about_quotes{
+    position: relative;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    font-family: poppins;
+}
+
+.about_quotes span{
+    color: #555;
+     transition: 0.25s;
+}
+.about_quotes:hover span{
+    color: #feb69e;
+    text-shadow: 0 0 5px #30312a,
+    0 0 15px #feb69e,
+    0 0 30px #30312a;
+}
+
+
+
+
+
+
+
 #services{
   background-color: lightcoral;
 }
@@ -53,6 +98,7 @@ a{
     background-position: center;
     background-attachment: fixed;
     
+    
 }
 .chef .heading span{
     color: #000;
@@ -75,6 +121,7 @@ a{
     position: relative;
     overflow: hidden;
     border-radius: 30px;
+    
 }
 .box{
     display: none;
@@ -468,9 +515,6 @@ a{
 }
 
   @media screen and (max-width: 700px){
-      .home{
-          width:105vw;
-      }
     .side img{
         display: none;
     }
