@@ -46,26 +46,3 @@ function sendMail(){
 
 
 
-  setTimeout(() => {
-    const box = document.getElementsByClassName('animation01');
-    const box1= document.querySelector('.animation02');
-  
-    box1.style.display = 'none';
-  
-  }, 8000);
-
-
-
-  setTimeout(()=>{
-    const quotes=document.querySelector('.quotes')
-    const home_img=document.querySelector('.home_img')
-    const button=document.querySelector('.button')
-    const swing=document.querySelector('.swing')
-
-    quotes.style.transition="2s"
-
-    quotes.style.visibility="visible"
-    home_img.style.visibility="visible"
-    button.style.visibility="visible"
-    swing.style.visibility="visible"
-  },10000)
